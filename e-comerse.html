@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/saqi.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #76b852, #8dc26f);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .ecommerce-container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            animation: slideIn 1s ease-out;
+        }
+
+        .ecommerce-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .ecommerce-container p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .ecommerce-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .ecommerce-icons i {
+            font-size: 3rem;
+            color: #ffffff;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .ecommerce-icons i:hover {
+            transform: scale(1.3);
+            color: #000000;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #8707ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: black;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ecommerce-container">
+        <h1>E-Commerce Solutions</h1>
+        <p>
+            Build a powerful online presence with our e-commerce solutions. We specialize in creating 
+            secure, user-friendly, and visually appealing online stores to help your business thrive in the 
+            digital world. From product management to seamless checkout experiences, we ensure you deliver 
+            exceptional service to your customers.
+        </p>
+        <p>
+            Our features include integration with payment gateways, inventory management, mobile 
+            optimization, and analytics tools to track your store's performance. Let's create a digital shopping 
+            experience that's efficient, attractive, and impactful.
+        </p>
+        <div class="ecommerce-icons">
+            <i class="fas fa-shopping-cart" title="Secure Checkout"></i>
+            <i class="fas fa-credit-card" title="Payment Gateways"></i>
+            <i class="fas fa-box" title="Inventory Management"></i>
+            <i class="fas fa-chart-line" title="Analytics Tools"></i>
+            <i class="fas fa-mobile-alt" title="Mobile Optimized"></i>
+        </div>
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+</body>
+</html>
