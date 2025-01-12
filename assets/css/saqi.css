@@ -12515,3 +12515,13 @@ pre .code {
   font-size: 1rem;
   color: #555; /* Subtle gray color */
 }
+.typing-text::after {
+  content: "|";
+  animation: blink 0.7s steps(2) infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
