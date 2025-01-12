@@ -42,3 +42,35 @@ AOS.init({
     duration: 1000,
     easing: "ease-in-out",
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const texts = ["Frontend Designer", "Freelancer", "Web Developer", "UI/UX Enthusiast"];
+    const typingSpeed = 100; // milliseconds
+    const erasingSpeed = 50; // milliseconds
+    const delayBetweenTexts = 2000; // milliseconds
+    const typingTextElement = document.getElementById("typing-text");
+
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        if (!isDeleting && charIndex < texts[textIndex].length) {
+            typingTextElement.textContent += texts[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeEffect, typingSpeed);
+        } else if (isDeleting && charIndex > 0) {
+            typingTextElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(typeEffect, erasingSpeed);
+        } else if (!isDeleting && charIndex === texts[textIndex].length) {
+            isDeleting = true;
+            setTimeout(typeEffect, delayBetweenTexts);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length; // Loop back to the first text
+            setTimeout(typeEffect, typingSpeed);
+        }
+    }
+
+    typeEffect();
+});
