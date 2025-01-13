@@ -1,112 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Design</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="SaQi">
+    <title>SaQi, personal Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + main styles -->
     <link rel="stylesheet" href="assets/css/saqi.css">
-    <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background: linear-gradient(135deg, #ececec96, #2575fc);
-            color: #e20000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="assets/css/saqi.css">
+     <style>
+        /* Graphic Design Services Section Styling */
+        .section {
+            padding: 3rem 1rem;
+            background-color: #999da0; /* Light background color */
         }
-
-        .graphic-container {
-            max-width: 800px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-            animation: zoomIn 1s ease-in-out;
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #6c757d; /* Gray subtitle */
+            margin-bottom: 1rem;
         }
-
-        .graphic-container h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            color: #000000;
+        
+        .section-title {
+            font-size: 2rem;
+            color: #212529; /* Dark text for section title */
+            font-weight: bold;
+            margin-bottom: 2rem;
         }
-
-        .graphic-container p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: white;
+        
+        .service-card {
+            background: #dee2e6; /* White card background */
+            border: 1px solid #dee2e6; /* Light border */
+            border-radius: 0.5rem; /* Rounded corners */
+            padding: 1.5rem; /* Inner padding */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */
         }
-
-        .graphic-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+        
+        .service-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
         }
-
-        .graphic-icons i {
-            font-size: 3rem;
-            color: #fafaf8;
-            transition: transform 0.3s ease, color 0.3s ease;
+        
+        .icon {
+            width: 80px; /* Icon size */
+            height: auto; /* Maintain aspect ratio */
         }
-
-        .graphic-icons i:hover {
-            transform: scale(1.3);
-            color: #5774d4;
+        
+        .title {
+            font-size: 1.5rem;
+            color: #495057; /* Dark gray for titles */
+            margin-top: 1rem;
+            font-weight: 600; /* Semi-bold */
         }
-
-        .back-btn {
-            margin-top: 20px;
-            padding: 10px 20px;
+        
+        .subtitle {
             font-size: 1rem;
-            background: #a3a29d;
-            color: #000000;
-            border: yellow;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s ease, transform 0.3s ease;
+            color: #000000; /* Gray text for subtitles */
+            margin-top: 0.5rem;
+            line-height: 1.6; /* Improved readability */
         }
-
-        .back-btn:hover {
-            background: #000000;
-            transform: translateY(-3px);
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-    </style>
+        </style>
 </head>
 <body>
-    <div class="graphic-container">
-        <h1>Graphic Design</h1>
-        <p>
-            Elevate your brand's visual identity with stunning graphic design solutions. We specialize in creating logos, brochures, posters, and social media visuals that captivate your audience and convey your message effectively.
-        </p>
-        <p>
-            From bold typography to innovative layouts, our graphic design services combine creativity with professionalism to ensure every visual represents your brand's unique story. Let us transform your ideas into eye-catching designs.
-        </p>
-        <div class="graphic-icons">
-            <i class="fab fa-adobe" title="Adobe Suite"></i>
-            <i class="fas fa-paint-brush" title="Creative Art"></i>
-            <i class="fas fa-vector-square" title="Vector Design"></i>
-            <i class="fas fa-image" title="Image Editing"></i>
-            <i class="fab fa-canva" title="Canva"></i>
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="/index.html#">SaQi</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="/index.html#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="/index.html#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="/index.html#skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="/index.html#Services">Services</a>
+                </li>
+                
+                <li class="item">
+                    <a class="link" href="/index.html#portfolio">Portfolio</a>
+                </li>
+
+                <li class="item">
+                    <a class="link" href="/index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
         </div>
-        <a href="index.html" class="back-btn">Back to Home</a>
-    </div>
+    </nav><!-- End of Page Navbar -->
+    <section class="section" id="graphic-design">
+        <div class="container text-center">
+            <p class="section-subtitle">Explore My Expertise</p>
+            <h6 class="section-title mb-6">Graphic Design Services</h6>
+            <!-- Graphics Design Row -->
+            <div class="row">
+                <!-- Service Item 1 -->
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="service-card">
+                        <div class="body">
+                           
+                            <h6 class="title">Creative Design</h6>
+                            <p class="subtitle">
+                                Offering visually compelling creative designs tailored to captivate your audience.
+                                <a href="creative design.html" class="read-more">Read More</a>
+                            </p>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Service Item 2 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="body">
+                            
+                            <h6 class="title">Brand Identity</h6>
+                            <p class="subtitle">
+                                Building memorable brand identities that reflect the essence of your business.
+                                <a href="brand identity.html" class="read-more">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Service Item 3 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="body">
+                           
+                            <h6 class="title">Custom Illustrations</h6>
+                            <p class="subtitle">
+                                Designing unique illustrations to enrich your brand's visual storytelling abailty. <s></s>
+                                <a href="illustrations.html" class="read-more">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- footer -->
+     <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="https://facelessdevop.github.io/"><strong><i>SaQi</i></strong></a>
+            <p>All Rights Reserved</p>
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://web.facebook.com/profile.php?id=100058405277252"
+                    target="https://web.facebook.com/profile.php?id=100058405277252" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/FacelessDevop" target="https://github.com/FacelessDevop"
+                    class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+     <!-- core  -->
+     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+ 
+     <!-- bootstrap 3 affix -->
+     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+ 
+     <!--  js -->
+     <script src="assets/js/saqi.js"></script>
 </body>
 </html>
